@@ -5,6 +5,7 @@
     "build": "vuepress build notes"
   },
   "devDependencies": {
+    "@vuepress/plugin-shiki": "^2.0.0-beta.5",
     "vuepress": "^2.0.0-beta.16"
   }
 }
