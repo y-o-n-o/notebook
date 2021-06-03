@@ -16,4 +16,13 @@ export const zh: SidebarConfig = {
       ],
     },
   ],
+  '/vscode/': [
+    {
+      isGroup: true,
+      text: 'VSCode',
+      children: [
+        '/vscode/settings.md',
+      ],
+    },
+  ],
 }
