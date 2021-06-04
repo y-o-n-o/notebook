@@ -23,6 +23,20 @@
 "vim.useCtrlKeys: false",
 ```
 
+- 因为不覆盖 Ctrl 快捷键了， `<C-n>` 和 `<C-p>` 不再能用来切换 Intellisense 的补全。所以在 `keybindings.json` 加两个配置：
+```json:no-line-numbers
+{
+    "key": "ctrl+j",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+},
+{
+    "key": "ctrl+k",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+}
+```
+
 - 由于 `space` 用于 `which key`，把 `leaderkey` 设置为 `\`，用到 `leaderkey` 的都改掉。
 ```json:no-line-numbers
 "vim.leader": "\\",
