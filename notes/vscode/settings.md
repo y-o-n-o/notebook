@@ -47,6 +47,30 @@
 "vim.timeout": 3000,
 ```
 
+- 将 `j`/`k` 映射成 `gj`/`gk`，
+  1. 在 word wrap 时可以在行内切换，
+  2. 不进入代码折叠区域。
+```json:no-line-numbers
+{
+    "before": [
+        "j"
+    ],
+    "after": [
+        "g",
+        "j"
+    ]
+},
+{
+    "before": [
+        "k"
+    ],
+    "after": [
+        "g",
+        "k"
+    ]
+},
+```
+
 ### Easy motion
 
 - 启用
